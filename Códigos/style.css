@@ -1,5 +1,4 @@
-/* Importação Fonts (GoogleFonts) */
-
+/* Importação Fonts(GoogleFonts) */
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500&family=Inter:wght@600&family=Montserrat:wght@800&family=Teko:wght@600&display=swap');
 
 /* Estilos gerais (Todo projeto) */
@@ -10,61 +9,61 @@
 }
 
 body{
-    background: #1F1517;
+    background-color: #1F1517;
     color: #fff;
 }
 
-html {
-    font-family: Inter, sans-serif;
+html{
+    font-family: 'Inter', sans-serif;
     font-weight: 600;
 }
 
-a {
-    text-decoration: none; /* Remove decoração texto */
+a{
+    text-decoration: none;
+
 }
 
-ul {
-    /* Remove os marcadores (Bolinhas) */
+ul{
+    /* Remove os marcadores(Bolinhas) */
     list-style-type: none;
 }
 
 /* ______________________________________________________________________ */
-/* Cabeçalho (Barra de navegação) */
+/* Cabeçalho/Header (Barra de navegação) */
 
-nav {
-    max-width: 1120px; /* Define a largura máxima do elemneto em 11220 pixels */
-    margin: auto; /*Centraliza o elemento horizontalnamente na tela */
-    padding: 1.5rem 10rem;
+nav{
+    max-width: 1120px;
+    margin: auto; /*Centraliza o elemento*/
+    padding: 1.5rem 10rem; /*AJUDAA NISSOOOOOOOOOOOOOOOOOO*/
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.title {
+.title{
     font-family: 'Teko', sans-serif;
     font-size: 32px;
     font-weight: 600;
-    text-transform: uppercase;
+    text-transform: uppercase; /*Transforma o texto em letras maiúsculas*/
 }
 
 /* Estilos para o menu hamburguer */
-.menu-toggle {
-    display: none;
+.menu-toggle{
+    display: none; /*não exibe em telas grandes*/
     cursor: pointer;
 }
 
-/* Imagem do hamburguer (Responsividade) */
-
-.menu-icon {
+/* Imagem do Hamburguer (Responsividade) */
+.menu-icon{
     width: 28px;
     margin-left: 20px;
     display: none;
 }
 
-.menu {
-    display: flex;
-    flex-direction: row;
-    gap: 24px;
+.menu{
+    display: flex; /*elemento como um container flexível*/
+     flex-direction: row; /*direção dos elementos para a disposiçao em linha */
+    gap: 24px; /*espaçamento entre os elementos filhos como 24 pixels*/
     color: #FFF2E780;
     margin-top: 9px;
     margin-left: 25px;
@@ -72,24 +71,24 @@ nav {
 }
 
 .menu a:hover {
-    color: #fff;
+    color: #fff; /*nova cor quando o cursor passa em cima*/
 }
 
-.menu a:visited {
-    color: #FFF2E780;
+.menu a:visited{
+    color: #FFF2E780; /*Cor dos links visitados */
 }
 
-.github {
+.github{
     color: #FFF2E7;
     font-weight: 600;
-    margin-top: 8px;
+    margin-top: 8px; 
 }
 
-.github:hover {
-    color: #a45a49;
+.github:hover{
+    color: #a45a49; /*Nova cor do texto quando o cursor passa em cima*/ 
 }
 
-/* ___________________________________________ */
+/* ________________________________________________________________ */
 /* Responsividade (Telas menores que 768px) */
 
 @media screen and (max-width: 768px) {
@@ -105,27 +104,25 @@ nav {
         transition: max-height 0.5s;
         z-index: 9;
     }
-    nav ul li {
+    nav ul li{
         display: block;
         margin: auto;
         margin-top: 10px;
         margin-bottom: 10px;
     }
-    .menu {
-       margin-left: 0px; 
+    .menu{
+        margin-left: 0px;
     }
-
-    .menu-icon {
+    .menu-icon{
         display: block;
         cursor: pointer;
         margin-right: -70px;
     }
-    .github {
+    .github{
         margin-left: 70px;
         margin-right: 70px;
     }
-    .title {
+    .title{
         margin-left: -100px;
     }
 }
-
